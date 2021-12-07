@@ -8,7 +8,7 @@ Open a git console and use the command: `npm start` or `yarn start`
 
 Here is the sketch of the mini project, of course my project will have my own details and photo:
 <br/>
-<img src="" alt="sketch" />
+<img src="https://github.com/gusmontoya/mini-travel_journal/blob/main/public/images/sketchpng.png" alt="sketch" />
 
 
 
