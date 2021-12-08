@@ -33,6 +33,7 @@ nav {
     padding: 20px 36px;
     box-shadow: 0px 2.98256px 7.4564px rgba(0, 0, 0, 0.1);
     border-radius: 6px 6px 0 0;
+    opacity: 0.8;
 }
 
 .nav--logo {
@@ -58,10 +59,13 @@ nav {
 }
 
 .cards-list {
-    display: flex;
+    /* display: flex;
     flex-direction: column;
+    */
+    border-radius: 10px; 
     background-color: #fff;
-    border-radius: 10px;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 /* Hero Body styling */
@@ -71,55 +75,97 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    opacity: 0.4;
-    
+    border-radius: 10px; 
 }
 
 
 /* Card styling */
 
-.card {
-    /* display: flex;
-    width: 600px;
-    height: 190px; */
-    margin: 20px;
-    padding: 20px;
-    width: 500px;
-    min-height: 200px;
-    display: grid;
-    grid-template-rows: 20px 50px 1fr 50px;
-    border-radius: 10px;
-    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.25);
-    transition: all 0.2s;
+.card--container {
+    display: flex;
+    max-height: 250px;
+    margin: 40px 40px 0 40px;
+    gap:15px;
+    align-self: center;
+    overflow: auto;  
 }
 
-.card:hover {
+.card-container:hover {
     box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.4);
     transform: scale(1.01);
 }
 
-.attraction_profile {
-    display: flex;
-    width: 80px;
-
-}
-
 .card--image {
-    /* width: 75px; */
+    width: 140px;
+    height: 208px;
+    object-fit: contain;
+    margin-right: 1em;
     border-radius: 9px;
-    margin-bottom: 9px;
 }
 
-.card--stats {
+.card--profile {
+    border-radius: 7px;
+    width: 126px;
+    max-height: 168px;
+}
+
+.card--details {
+    margin: 15px 0; 
+}
+
+.place--location {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    font-size: 10px;    
 }
 
+.place--mapicon {
+    color: #F55A5A;
+    margin-right: .2em;
+    width: 7px;
+    height: 10px;
+}
 
+.location--name {
+    /* display: flex;
+    font-size: 12px */
+    font-size: 12px;
+    line-height: 12px;
+    letter-spacing: 0.17em;
+    text-transform: uppercase;
+}
 
+.place--address {
+    /* padding-left: 20px;
+    color: #918E9B;
+    text-decoration: underline; */
 
+    margin-left: 1em;
+    color: #918E9B;
+    font-size: 10px;
+    line-height: 12px;
+    text-decoration-line: underline;
+}
 
-.card--star {
-    height: 14px;
+.card--text{
+    margin-left: 25px;
+}
+
+.place--name {
+    color: #2B283A;
+    margin-bottom: 15px;
+    font-size: 25px;
+}
+
+.place--date {
+    display: block;
+    font-size: 11px;
+    color: 2B283A;
+    margin-bottom: 7px;
+}
+
+.place--description {
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 1.4;
+    margin-top: 0;
 }

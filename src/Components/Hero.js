@@ -1,5 +1,5 @@
 import React from 'react';
-import backgroundVideo from '../Components/assets/clouds-01.mp4';
+import backgroundVideo from '../Components/assets/polaroid-01.mp4';
 
 
 export default function Hero(){
